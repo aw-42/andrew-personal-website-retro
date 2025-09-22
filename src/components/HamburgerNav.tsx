@@ -42,11 +42,12 @@ const HamburgerNav = () => {
       <nav
         className={`fixed top-0 right-0 h-full w-80 border-l-4 border-pixel-green z-40 transform transition-transform duration-150 ${
           isOpen ? "translate-x-0" : "translate-x-full"
-        } bg-background`}
+        }`}
+        style={{ backgroundColor: '#20516C' }}
       >
         <div className="flex flex-col items-center justify-center h-full space-y-4 p-8">
           <div className="text-center mb-8">
-            <h2 className="font-pixel-bold text-3xl text-pixel-green mb-4">
+            <h2 className="font-pixel-bold text-3xl text-white mb-4">
               MENU
             </h2>
             <div className="w-24 h-1 bg-pixel-orange mx-auto"></div>
@@ -56,7 +57,7 @@ const HamburgerNav = () => {
             <a
               key={link.name}
               href={link.href}
-              className="font-pixel text-xl text-foreground hover:text-pixel-orange hover:bg-pixel-green/10 transition-colors duration-100 w-full text-center py-4 px-6 border-2 border-transparent hover:border-pixel-orange"
+              className="font-pixel text-xl text-white hover:text-pixel-orange hover:bg-white/10 transition-colors duration-100 w-full text-center py-4 px-6 border-2 border-transparent hover:border-pixel-orange"
               onClick={() => setIsOpen(false)}
             >
               {link.name}
