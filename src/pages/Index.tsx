@@ -9,7 +9,7 @@ const Index = () => {
   const [showDescription, setShowDescription] = useState(false);
 
   return (
-    <div className="min-h-screen bg-background relative overflow-x-hidden">
+    <div className="min-h-screen relative overflow-x-hidden" style={{ background: 'linear-gradient(to bottom, #305F75, #2E759B)' }}>
       <HamburgerNav />
       
       {/* Hero Section */}
@@ -51,13 +51,13 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section className="bg-card py-16 px-4">
+      <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="font-retro text-4xl md:text-6xl text-card-foreground mb-12">
+          <h2 className="font-retro text-4xl md:text-6xl text-white mb-12">
             About Me
           </h2>
           
-          <div className="space-y-6 font-pixel text-base md:text-lg leading-relaxed text-card-foreground">
+          <div className="space-y-6 font-pixel text-base md:text-lg leading-relaxed text-white">
             <ScrollTriggeredText 
               text="For 15+ years, I've helped product companies, ad agencies, and start-ups build great products, bring them to market, and grow strong teams. Today, I'm exploring new start-up ideas, consulting, and leading the Toronto Product Management Association as one of the Board."
               speed={25}
@@ -87,13 +87,13 @@ const Index = () => {
       <hr className="section-divider" />
       
       {/* Side Quests Section */}
-      <section className="bg-muted py-16 px-4">
+      <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="font-retro text-4xl md:text-6xl text-muted-foreground mb-12">
+          <h2 className="font-retro text-4xl md:text-6xl text-white mb-12">
             Side Quests
           </h2>
           
-          <div className="font-pixel text-base md:text-lg leading-relaxed space-y-4 text-muted-foreground">
+          <div className="font-pixel text-base md:text-lg leading-relaxed space-y-4 text-white">
             <ScrollTriggeredText 
               text="In addition to my resume/work in product and marketing, I've been involved in many other professional and creative projects."
               className="mb-8"
@@ -210,7 +210,7 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-secondary text-secondary-foreground py-8 px-4">
+      <footer className="text-white py-8 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <p className="font-pixel">
             Created by Andrew, 2025
