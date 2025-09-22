@@ -24,7 +24,7 @@ const ScrollTriggeredText = ({
           text={text}
           delay={delay}
           speed={speed}
-          className="font-pixel text-foreground"
+          className="font-pixel text-white"
         />
       )}
     </div>
