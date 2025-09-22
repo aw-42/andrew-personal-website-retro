@@ -14,44 +14,40 @@ const Index = () => {
       
       {/* Hero Section */}
       <section 
-        className="min-h-screen relative px-4 bg-cover bg-center bg-no-repeat grid-overlay"
+        className="min-h-screen flex flex-col items-center justify-center relative px-4 bg-cover bg-center bg-no-repeat grid-overlay"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
-        {/* Main Title - Upper Left */}
-        <div className="absolute top-1/4 left-4 md:left-16 z-10">
-          <h1 className="font-retro text-4xl md:text-6xl lg:text-8xl text-primary text-shadow-subtle">
+        <div className="relative z-10 text-center max-w-4xl mx-auto">
+          {/* Main Title */}
+          <h1 className="font-retro text-6xl md:text-8xl lg:text-9xl text-primary text-shadow-subtle mb-8">
             <TypewriterText 
               text="Hello" 
               speed={150}
               onComplete={() => setShowSubtitle(true)}
             />
           </h1>
-        </div>
-        
-        {/* Subtitle - Center Right */}
-        {showSubtitle && (
-          <div className="absolute top-1/2 right-4 md:right-16 z-10 transform -translate-y-1/2">
-            <h2 className="font-retro text-3xl md:text-4xl lg:text-6xl text-primary text-shadow-subtle text-right">
+          
+          {/* Subtitle */}
+          {showSubtitle && (
+            <h2 className="font-retro text-3xl md:text-5xl lg:text-6xl text-primary mb-8 text-shadow-subtle">
               <TypewriterText 
                 text="I'm Andrew" 
                 speed={100}
                 onComplete={() => setShowDescription(true)}
               />
             </h2>
-          </div>
-        )}
-        
-        {/* Description - Bottom Left */}
-        {showDescription && (
-          <div className="absolute bottom-1/4 left-4 md:left-16 z-10 max-w-xs md:max-w-lg">
-            <div className="font-pixel text-sm md:text-lg lg:text-xl text-primary leading-relaxed text-shadow-subtle">
+          )}
+          
+          {/* Description */}
+          {showDescription && (
+            <div className="font-pixel text-lg md:text-xl lg:text-2xl text-primary max-w-3xl mx-auto leading-relaxed text-shadow-subtle">
               <TypewriterText 
                 text="I'm a builder, product leader, ex-founder, and artist." 
                 speed={40}
               />
             </div>
-          </div>
-        )}
+          )}
+        </div>
       </section>
 
       {/* About Section */}
