@@ -100,7 +100,7 @@ const Index = () => {
               speed={30}
             />
             
-            <p className="font-pixel-bold mb-6">Here are a few public ones:</p>
+            <p className="font-pixel-bold mb-6 text-white">Here are a few public ones:</p>
             
             <div className="space-y-3">
               <ScrollTriggeredText 
