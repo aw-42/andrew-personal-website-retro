@@ -30,7 +30,7 @@ All colors MUST be HSL. Fonts: Orbitron for headers, Pixelify Sans for body.
     --accent: 210 80% 70%; /* Lighter accent blue */
     --accent-foreground: 210 40% 20%;
     
-    --pixel-green: 120 100% 50%; /* Classic pixel green */
+    --pixel-green: 40 87% 72%; /* Golden yellow #F7CD78 */
     --pixel-orange: 25 100% 60%; /* Warm pixel orange */
     --pixel-blue: 220 100% 60%; /* Deep pixel blue */
 
@@ -84,7 +84,7 @@ All colors MUST be HSL. Fonts: Orbitron for headers, Pixelify Sans for body.
     --accent: 210 60% 50%; /* Accent blue */
     --accent-foreground: 0 0% 95%;
     
-    --pixel-green: 120 100% 60%; /* Bright pixel green */
+    --pixel-green: 40 85% 75%; /* Golden yellow #F7CD78 (bright for dark mode) */
     --pixel-orange: 25 100% 65%; /* Bright pixel orange */
     --pixel-blue: 220 100% 70%; /* Bright pixel blue */
 
