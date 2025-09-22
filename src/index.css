@@ -8,27 +8,27 @@ All colors MUST be HSL. Fonts: Orbitron for headers, Pixelify Sans for body.
 
 @layer base {
   :root {
-    /* Retro Gaming Color Palette */
-    --background: 195 100% 85%; /* Light sky blue */
-    --foreground: 220 25% 15%; /* Dark blue-gray */
+    /* Professional Blue Design Palette */
+    --background: 200 80% 88%; /* Light sky blue background */
+    --foreground: 210 40% 20%; /* Dark professional text */
 
-    --card: 200 50% 92%; /* Light blue card background */
-    --card-foreground: 220 25% 15%;
+    --card: 210 60% 45%; /* Professional blue for cards */
+    --card-foreground: 0 0% 100%; /* White text on blue */
 
-    --popover: 200 50% 92%;
-    --popover-foreground: 220 25% 15%;
+    --popover: 210 60% 45%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 45 100% 70%; /* Bright pixel yellow */
-    --primary-foreground: 220 25% 15%;
+    --primary: 0 0% 100%; /* White for primary text */
+    --primary-foreground: 210 40% 20%;
     
-    --secondary: 195 100% 65%; /* Bright cyan */
-    --secondary-foreground: 220 25% 15%;
+    --secondary: 210 50% 35%; /* Darker professional blue */
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 200 30% 80%; /* Soft blue-gray */
-    --muted-foreground: 220 20% 40%;
+    --muted: 210 70% 60%; /* Medium blue for side quests */
+    --muted-foreground: 0 0% 100%;
 
-    --accent: 280 100% 70%; /* Retro magenta */
-    --accent-foreground: 220 25% 15%;
+    --accent: 210 80% 70%; /* Lighter accent blue */
+    --accent-foreground: 210 40% 20%;
     
     --pixel-green: 120 100% 50%; /* Classic pixel green */
     --pixel-orange: 25 100% 60%; /* Warm pixel orange */
@@ -62,27 +62,27 @@ All colors MUST be HSL. Fonts: Orbitron for headers, Pixelify Sans for body.
   }
 
   .dark {
-    /* Dark retro gaming theme */
-    --background: 220 35% 8%; /* Deep dark blue */
-    --foreground: 45 100% 85%; /* Bright yellow text */
+    /* Dark professional theme */
+    --background: 210 40% 12%; /* Dark professional background */
+    --foreground: 0 0% 95%; /* Light text */
 
-    --card: 220 30% 12%; /* Dark blue cards */
-    --card-foreground: 45 100% 85%;
+    --card: 210 50% 20%; /* Dark blue cards */
+    --card-foreground: 0 0% 95%;
 
-    --popover: 220 30% 12%;
-    --popover-foreground: 45 100% 85%;
+    --popover: 210 50% 20%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 45 100% 70%; /* Bright pixel yellow */
-    --primary-foreground: 220 35% 8%;
+    --primary: 0 0% 100%; /* White for primary text */
+    --primary-foreground: 210 40% 12%;
 
-    --secondary: 195 100% 60%; /* Bright cyan */
-    --secondary-foreground: 220 35% 8%;
+    --secondary: 210 40% 25%; /* Darker blue */
+    --secondary-foreground: 0 0% 95%;
 
-    --muted: 220 20% 20%; /* Dark muted blue */
-    --muted-foreground: 200 20% 65%;
+    --muted: 210 50% 30%; /* Medium dark blue */
+    --muted-foreground: 0 0% 85%;
 
-    --accent: 280 100% 70%; /* Retro magenta */
-    --accent-foreground: 220 35% 8%;
+    --accent: 210 60% 50%; /* Accent blue */
+    --accent-foreground: 0 0% 95%;
     
     --pixel-green: 120 100% 60%; /* Bright pixel green */
     --pixel-orange: 25 100% 65%; /* Bright pixel orange */
@@ -135,20 +135,21 @@ All colors MUST be HSL. Fonts: Orbitron for headers, Pixelify Sans for body.
     font-weight: 700;
   }
 
-  /* Pixel-perfect borders */
-  .pixel-border {
-    border-style: solid;
-    border-width: 2px;
-    border-image: none;
+  /* Professional styling */
+  .grid-overlay {
+    background-image: 
+      linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
   }
 
-  /* Retro animations */
-  .retro-glow {
-    text-shadow: 0 0 10px hsl(var(--primary)), 0 0 20px hsl(var(--primary));
+  .section-divider {
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+    margin: 0;
   }
 
-  .pixel-shadow {
-    box-shadow: 4px 4px 0px hsl(var(--foreground) / 0.3);
+  .text-shadow-subtle {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   }
 }
 
