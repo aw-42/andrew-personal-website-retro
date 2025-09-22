@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        'retro': ['Orbitron', 'monospace'],
+        'pixel': ['Pixelify Sans', 'monospace'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -46,6 +50,11 @@ export default {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        pixel: {
+          green: "hsl(var(--pixel-green))",
+          orange: "hsl(var(--pixel-orange))",
+          blue: "hsl(var(--pixel-blue))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
