@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import HamburgerNav from "@/components/HamburgerNav";
 import TypewriterText from "@/components/TypewriterText";
 import ScrollTriggeredText from "@/components/ScrollTriggeredText";
-import heroImage from "@/assets/toronto-pixel-skyline.jpg";
+import heroImage from "@/assets/pixel-toronto-hero.png";
 
 const Index = () => {
   const [showSubtitle, setShowSubtitle] = useState(false);
