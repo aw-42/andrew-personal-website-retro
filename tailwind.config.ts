@@ -15,7 +15,7 @@ export default {
     extend: {
       fontFamily: {
         'retro': ['Orbitron', 'monospace'],
-        'pixel': ['Pixelify Sans', 'monospace'],
+        'pixel': ['VT323', 'monospace'],
       },
       colors: {
         border: "hsl(var(--border))",

@@ -126,12 +126,12 @@ All colors MUST be HSL. Fonts: Orbitron for headers, Pixelify Sans for body.
   }
 
   .font-pixel {
-    font-family: 'Pixelify Sans', monospace;
+    font-family: 'VT323', monospace;
     font-weight: 400;
   }
 
   .font-pixel-bold {
-    font-family: 'Pixelify Sans', monospace;
+    font-family: 'VT323', monospace;
     font-weight: 700;
   }
 
