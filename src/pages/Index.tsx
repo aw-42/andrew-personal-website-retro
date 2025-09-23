@@ -1,7 +1,7 @@
 import HamburgerNav from "@/components/HamburgerNav";
 import AboutParagraphs from "@/components/AboutParagraphs";
 import SideQuests from "@/components/SideQuests";
-import heroImage from "@/assets/hero-toronto.jpg";
+import heroImage from "@/assets/hero-2.jpg";
 
 const Index = () => {
 
