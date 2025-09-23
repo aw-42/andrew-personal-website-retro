@@ -9,7 +9,7 @@ const AboutParagraphs = () => {
   const { elementRef: ref4, isVisible: visible4 } = useScrollAnimation({ threshold: 0.3 });
 
   return (
-    <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
+    <div className="flex flex-col lg:flex-row gap-4 lg:gap-6 items-start">
       {/* Text Content */}
       <div className="space-y-6 font-pixel text-base md:text-lg leading-relaxed text-white flex-1">
         <div 
@@ -54,11 +54,11 @@ const AboutParagraphs = () => {
       </div>
       
       {/* Portrait Image */}
-      <div className="flex-shrink-0 lg:w-1/3 xl:w-1/4">
+      <div className="flex-shrink-0 lg:w-1/2 xl:w-2/5">
         <img 
           src={andrewPortrait} 
           alt="Andrew - Pixel art portrait"
-          className="w-full max-w-xs mx-auto lg:max-w-none object-contain"
+          className="w-full max-w-md mx-auto lg:max-w-none object-contain"
         />
       </div>
     </div>
