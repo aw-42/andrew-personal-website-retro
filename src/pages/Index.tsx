@@ -14,23 +14,26 @@ const Index = () => {
         className="min-h-screen relative px-4 bg-cover bg-center bg-no-repeat grid-overlay"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
-        <div className="relative z-10 h-screen flex flex-col justify-between py-16 md:py-24">
-          {/* Top Section - Hello */}
-          <div className="flex justify-start">
-            <h1 className="font-retro text-5xl md:text-7xl lg:text-8xl text-primary text-shadow-subtle">
-              Hello
-            </h1>
-          </div>
-          
-          {/* Center Section - Main Content */}
-          <div className="text-center self-center max-w-4xl">
-            <h2 className="font-retro text-4xl md:text-6xl lg:text-7xl text-primary mb-6 text-shadow-subtle">
-              I'm Andrew
-            </h2>
+        <div className="relative z-10 h-screen flex flex-col justify-end py-16 md:py-24">
+          {/* Positioned text elements */}
+          <div className="absolute inset-0 flex items-center justify-between px-4 md:px-8">
+            {/* Hello - Center Left */}
+            <div className="flex-1 flex justify-start items-center">
+              <h1 className="font-retro text-5xl md:text-7xl lg:text-8xl text-primary text-shadow-subtle">
+                Hello
+              </h1>
+            </div>
+            
+            {/* I'm Andrew - Center Right */}
+            <div className="flex-1 flex justify-end items-center">
+              <h2 className="font-retro text-4xl md:text-6xl lg:text-7xl text-primary text-shadow-subtle">
+                I'm Andrew
+              </h2>
+            </div>
           </div>
           
           {/* Bottom Section - Description */}
-          <div className="text-center">
+          <div className="text-center relative z-10">
             <p className="font-pixel text-xl md:text-2xl lg:text-3xl text-primary max-w-4xl mx-auto leading-relaxed text-shadow-subtle">
               I'm a builder, product leader, ex-founder, and artist.
             </p>
