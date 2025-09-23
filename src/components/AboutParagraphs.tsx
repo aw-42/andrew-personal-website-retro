@@ -11,7 +11,7 @@ const AboutParagraphs = () => {
   return (
     <div className="flex flex-col lg:flex-row gap-4 lg:gap-6 items-start">
       {/* Text Content */}
-      <div className="space-y-6 font-pixel text-base md:text-lg leading-6 text-white flex-1">
+      <div className="space-y-6 font-pixel text-lg md:text-xl leading-6 text-white flex-1">
         <div 
           ref={ref1} 
           className={cn(
