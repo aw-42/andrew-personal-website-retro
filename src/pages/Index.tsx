@@ -70,7 +70,7 @@ const Index = () => {
         {/* Footer */}
         <footer className="text-white py-8 px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <p className="font-pixel">
+            <p className="font-pixel text-lg md:text-xl leading-6">
               Created by Andrew, 2025
             </p>
           </div>

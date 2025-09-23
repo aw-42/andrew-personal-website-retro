@@ -25,7 +25,7 @@ const SideQuests = () => {
   ];
 
   return (
-    <div className="font-pixel text-base md:text-lg leading-relaxed space-y-4 text-white">
+    <div className="font-pixel text-lg md:text-xl leading-6 space-y-4 text-white">
       <div 
         ref={introRef}
         className={cn(
