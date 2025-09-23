@@ -54,11 +54,11 @@ const AboutParagraphs = () => {
       </div>
       
       {/* Portrait Image */}
-      <div className="flex-shrink-0 lg:w-1/2 xl:w-2/5">
+      <div className="flex-shrink-0 lg:w-1/4 xl:w-1/5">
         <img 
           src={andrewPortrait} 
           alt="Andrew - Pixel art portrait"
-          className="w-full max-w-md mx-auto lg:max-w-none object-contain"
+          className="w-full max-w-sm mx-auto lg:max-w-none object-contain"
         />
       </div>
     </div>
