@@ -6,22 +6,22 @@ const SideQuests = () => {
   
   const sideQuestItems = [
     "2023-Now | Board Member - Toronto Product Management Association",
-    "2019-2024 | Co-Founder / Digital Experience Designer - The Downtown DeFrost Music & Arts Festival",
-    "2023-Now | In-Store Music Curator - 0601CM. The Abnormal Beauty Company",
-    "2019 | Featured Artist - WIRED Music & Health Naturals Inc",
-    "2018-2020 | Co-Founder - The Alberta Electronic Music Conference",
-    "2020 | Co-Founder - The Virtual Electronic Music Summit",
-    "2018, 2019 | Featured Speaker - Pecha Kucha",
-    "2018-2020 | Committee Member - Edmonton City Council Advisory Committee For Large-Scale Events",
-    "2015-2019 | Co-Founder - PM - Night Vision + Night Vision Music Academy",
-    "2018 | Content Marketing + Product Marketing - Seekbook: 360 Virtual Tours",
-    "2019 | Sound Design / 008 / Emerald Health Naturals Inc",
-    "2017-2018 | Digital Advisory Board Member - Alberta Music",
-    "2016 | Sound and Experience Design - Spectro (Interactive Art Exhibit)",
-    "2011 | Web Design + Strategy - Icebox Logic Agency",
-    "2014-2016 | Co-Founder, Investor - Aurora Beer",
-    "2015-2014 | Marketing Advisory Group - Magazines Canada",
-    "2013-2014 | Fund-raiser, United Way"
+    "2015-2024 | Co-founder / Digital Experience Designer - The Downtown Defrost Music & Arts Festival",
+    "2022-Now | In-Store Music Curator - DECIEM: The Abnormal Beauty Company",
+    "2022 | Featured Artist - Wired Magazine",
+    "2016-2020 | Co-founder - The Alberta Electronic Music Conference",
+    "2020 | Co-founder - The Virtual Electronic Music Summit",
+    "2015, 2019 | Featured Speaker - Petcha Kucha",
+    "2018-2020 | Committee Member - Edmonton City Council Advisory Committee for Large-Scale Events",
+    "2013-2019  | Co-founder, GM  - Night Vision + Night Vision Music Academy",
+    "2018 | Content Marketing + Product Marketing - Seekbeak: 360 Virtual Tours",
+    "2019 | Sound Design - DDB / Emerald Health Naturals Inc",
+    "2017-2018 | Digital Advisory Board Member, Alberta Music",
+    "2018 | Sound and Experience Design - Spectra (Interactive Art Exhibit)",
+    "2017 |  Web Design + Strategy -  Icebox Logic Agency",
+    "2014-2016 | Co-founder, Investor - Aurora Beer",
+    "2012-2014 | Marketing Advisory Group - Magazines Canada",
+    "2012-2014 | Fundraiser, United Way"
   ];
 
   return (
