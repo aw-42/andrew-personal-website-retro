@@ -14,29 +14,25 @@ const Index = () => {
         className="min-h-screen relative px-4 bg-cover bg-center bg-no-repeat grid-overlay"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
-        <div className="relative z-10 h-screen flex flex-col justify-end py-16 md:py-24">
-          {/* Positioned text elements */}
-          <div className="absolute inset-0 flex items-center justify-between px-4 md:px-8">
-            {/* Hello - Center Left */}
-            <div className="flex-1 flex justify-start items-center">
+        <div className="relative z-10 h-screen flex flex-col justify-center items-center py-16 md:py-24">
+          {/* Centered content container */}
+          <div className="max-w-[800px] mx-auto w-full">
+            {/* Hello and I'm Andrew - now in a centered layout */}
+            <div className="text-center space-y-4 mb-16">
               <h1 className="font-retro text-5xl md:text-7xl lg:text-8xl text-primary text-shadow-subtle">
                 Hello
               </h1>
-            </div>
-            
-            {/* I'm Andrew - Center Right */}
-            <div className="flex-1 flex justify-end items-center">
               <h2 className="font-retro text-4xl md:text-6xl lg:text-7xl text-primary text-shadow-subtle">
                 I'm Andrew
               </h2>
             </div>
-          </div>
-          
-          {/* Bottom Section - Description */}
-          <div className="text-center relative z-10">
-            <p className="font-pixel text-xl md:text-2xl lg:text-3xl text-primary max-w-4xl mx-auto leading-relaxed text-shadow-subtle">
-              I'm a builder, product leader, ex-founder, and artist.
-            </p>
+            
+            {/* Description */}
+            <div className="text-center">
+              <p className="font-pixel text-xl md:text-2xl lg:text-3xl text-primary leading-relaxed text-shadow-subtle">
+                I'm a builder, product leader, ex-founder, and artist.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -45,8 +41,8 @@ const Index = () => {
       <div style={{ background: 'linear-gradient(to bottom, #305F75, #2E759B)' }}>
         {/* About Section */}
         <section className="py-16 px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-retro text-4xl md:text-6xl text-white mb-12">
+          <div className="max-w-[800px] mx-auto">
+            <h2 className="font-retro text-4xl md:text-6xl text-white mb-12 text-center">
               About Me
             </h2>
             
@@ -54,12 +50,12 @@ const Index = () => {
           </div>
         </section>
 
-        <hr className="section-divider" />
+        <hr className="section-divider max-w-[800px] mx-auto" />
         
         {/* Side Quests Section */}
         <section className="py-16 px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-retro text-4xl md:text-6xl text-white mb-12">
+          <div className="max-w-[800px] mx-auto">
+            <h2 className="font-retro text-4xl md:text-6xl text-white mb-12 text-center">
               Side Quests
             </h2>
             
@@ -69,7 +65,7 @@ const Index = () => {
 
         {/* Footer */}
         <footer className="text-white py-8 px-4">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-[800px] mx-auto text-center">
             <p className="font-pixel text-lg md:text-xl leading-6">
               Created by Andrew, 2025
             </p>
