@@ -6,7 +6,7 @@ import heroImage from "@/assets/hero-2.jpg";
 const Index = () => {
 
   return (
-    <div className="min-h-screen relative overflow-x-hidden" style={{ background: 'linear-gradient(to bottom, #305F75, #2E759B)' }}>
+    <div className="min-h-screen relative overflow-x-hidden">
       <HamburgerNav />
       
       {/* Hero Section */}
@@ -38,38 +38,41 @@ const Index = () => {
         </div>
       </section>
 
-      {/* About Section */}
-      <section className="py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="font-retro text-4xl md:text-6xl text-white mb-12">
-            About Me
-          </h2>
-          
-          <AboutParagraphs />
-        </div>
-      </section>
+      {/* Content sections with gradient background */}
+      <div style={{ background: 'linear-gradient(to bottom, #305F75, #2E759B)' }}>
+        {/* About Section */}
+        <section className="py-16 px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-retro text-4xl md:text-6xl text-white mb-12">
+              About Me
+            </h2>
+            
+            <AboutParagraphs />
+          </div>
+        </section>
 
-      <hr className="section-divider" />
-      
-      {/* Side Quests Section */}
-      <section className="py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="font-retro text-4xl md:text-6xl text-white mb-12">
-            Side Quests
-          </h2>
-          
-          <SideQuests />
-        </div>
-      </section>
+        <hr className="section-divider" />
+        
+        {/* Side Quests Section */}
+        <section className="py-16 px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-retro text-4xl md:text-6xl text-white mb-12">
+              Side Quests
+            </h2>
+            
+            <SideQuests />
+          </div>
+        </section>
 
-      {/* Footer */}
-      <footer className="text-white py-8 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="font-pixel">
-            Created by Andrew, 2025
-          </p>
-        </div>
-      </footer>
+        {/* Footer */}
+        <footer className="text-white py-8 px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="font-pixel">
+              Created by Andrew, 2025
+            </p>
+          </div>
+        </footer>
+      </div>
     </div>
   );
 };
