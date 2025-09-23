@@ -112,6 +112,8 @@ All colors MUST be HSL. Fonts: Orbitron for headers, Pixelify Sans for body.
 
   body {
     @apply bg-background text-foreground font-pixel;
+    font-size: 1.25rem; /* 20px - larger for better VT323 readability */
+    line-height: 1.3; /* Tighter line height for pixel font aesthetic */
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     image-rendering: crisp-edges;
