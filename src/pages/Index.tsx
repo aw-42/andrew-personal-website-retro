@@ -11,23 +11,29 @@ const Index = () => {
       
       {/* Hero Section */}
       <section 
-        className="min-h-screen flex flex-col items-center justify-center relative px-4 bg-cover bg-center bg-no-repeat grid-overlay"
+        className="min-h-screen relative px-4 bg-cover bg-center bg-no-repeat grid-overlay"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
-        <div className="relative z-10 text-center max-w-4xl mx-auto">
-          {/* Main Title */}
-          <h1 className="font-retro text-6xl md:text-8xl lg:text-9xl text-primary text-shadow-subtle mb-8">
-            Hello
-          </h1>
+        <div className="relative z-10 h-screen flex flex-col justify-between py-16 md:py-24">
+          {/* Top Section - Hello */}
+          <div className="flex justify-start">
+            <h1 className="font-retro text-5xl md:text-7xl lg:text-8xl text-primary text-shadow-subtle">
+              Hello
+            </h1>
+          </div>
           
-          {/* Subtitle */}
-          <h2 className="font-retro text-3xl md:text-5xl lg:text-6xl text-primary mb-8 text-shadow-subtle">
-            I'm Andrew
-          </h2>
+          {/* Center Section - Main Content */}
+          <div className="text-center self-center max-w-4xl">
+            <h2 className="font-retro text-4xl md:text-6xl lg:text-7xl text-primary mb-6 text-shadow-subtle">
+              I'm Andrew
+            </h2>
+          </div>
           
-          {/* Description */}
-          <div className="font-pixel text-lg md:text-xl lg:text-2xl text-primary max-w-3xl mx-auto leading-relaxed text-shadow-subtle">
-            I'm a builder, product leader, ex-founder, and artist.
+          {/* Bottom Section - Description */}
+          <div className="text-center">
+            <p className="font-pixel text-xl md:text-2xl lg:text-3xl text-primary max-w-4xl mx-auto leading-relaxed text-shadow-subtle">
+              I'm a builder, product leader, ex-founder, and artist.
+            </p>
           </div>
         </div>
       </section>
