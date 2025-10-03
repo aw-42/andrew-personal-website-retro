@@ -51,7 +51,7 @@ const Index = () => {
               <p className="font-roboto text-base md:text-lg text-black">
                 Reach out here: <a href="mailto:andrew@example.com" className="underline hover:no-underline">Email</a> / 
                 <a href="https://x.com/andrew_reset" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">X</a> / 
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/andrewwilliamscanada/" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">LinkedIn</a>
               </p>
             </div>
           </div>
