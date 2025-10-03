@@ -134,7 +134,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="py-8 text-center" style={{ backgroundColor: '#FF1500' }}>
         <p className="font-roboto text-white text-base md:text-lg">
-          Site made by Andrew
+          Site made by Andrew, 2025
         </p>
       </footer>
     </div>;
