@@ -67,7 +67,7 @@ const Index = () => {
         </div>
 
         {/* Right Side - Portrait Image */}
-        <div className="aspect-square lg:aspect-[3/4] bg-cover bg-center bg-no-repeat" style={{
+        <div className="aspect-square bg-cover bg-center bg-no-repeat" style={{
         backgroundImage: `url(${heroImageSplit})`
       }} />
       </section>
