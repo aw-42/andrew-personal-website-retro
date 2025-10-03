@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        'retro': ['Orbitron', 'monospace'],
-        'pixel': ['VT323', 'monospace'],
+        'gatwick': ['Bebas Neue', 'Arial Black', 'sans-serif'],
+        'roboto': ['Roboto Mono', 'monospace'],
       },
       colors: {
         border: "hsl(var(--border))",

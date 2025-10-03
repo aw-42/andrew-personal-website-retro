@@ -1,84 +1,76 @@
 import HamburgerNav from "@/components/HamburgerNav";
-import AboutParagraphs from "@/components/AboutParagraphs";
-import SideQuests from "@/components/SideQuests";
-import heroImage from "@/assets/hero-image-new.jpg";
-import heroTextBg from "@/assets/hero-text-bg.jpg";
-import sideQuestsBg from "@/assets/side-quests-bg.jpg";
+import heroImageSplit from "@/assets/hero-image-split.jpg";
+import heroBgYellow from "@/assets/hero-bg-yellow.jpg";
 
 const Index = () => {
-
   return (
     <div className="min-h-screen relative overflow-x-hidden">
       <HamburgerNav />
       
-      {/* Hero Section - Full screen with portrait image */}
-      <section 
-        className="min-h-screen relative flex items-center justify-center bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
-        {/* Overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/20"></div>
-        
-        {/* Hero Content */}
-        <div className="relative z-10 max-w-[800px] mx-auto px-4 text-center">
-          <div 
-            className="inline-block px-8 py-12 md:px-12 md:py-16 rounded-lg bg-cover bg-center"
-            style={{ backgroundImage: `url(${heroTextBg})` }}
-          >
-            <h1 className="font-retro text-5xl md:text-7xl lg:text-8xl text-white mb-6 drop-shadow-2xl">
-              Hello
-            </h1>
-            <h2 className="font-retro text-4xl md:text-6xl lg:text-7xl text-white mb-8 drop-shadow-2xl">
-              I'm Andrew
-            </h2>
-            <p className="font-pixel text-xl md:text-2xl lg:text-3xl text-white leading-relaxed drop-shadow-xl">
-              I'm a builder, product leader, ex-founder, and artist.
-            </p>
+      {/* Split-Screen Hero Section */}
+      <section className="min-h-screen grid lg:grid-cols-2 grid-cols-1">
+        {/* Left Side - Text Content with Yellow Background */}
+        <div 
+          className="relative flex items-center justify-center px-8 py-16 lg:py-24 bg-cover bg-center"
+          style={{ backgroundImage: `url(${heroBgYellow})` }}
+        >
+          <div className="max-w-xl w-full space-y-8">
+            {/* Main Heading */}
+            <div>
+              <h1 className="font-gatwick text-7xl md:text-8xl lg:text-9xl text-black leading-none mb-4">
+                I'm Andrew
+              </h1>
+              <p className="font-roboto text-xl md:text-2xl text-black">
+                I'm a builder, founder, and artist.
+              </p>
+            </div>
+
+            {/* Paragraph 1 */}
+            <div className="space-y-4">
+              <p className="font-roboto text-base md:text-lg text-black leading-relaxed">
+                I'm a Toronto-based PMA (and occasional PM for startups), with a background in scaling tech products and building innovative solutions. I've spent the last decade helping startups grow from early-stage ideas to market-ready platforms.
+              </p>
+
+              {/* Paragraph 2 */}
+              <p className="font-roboto text-base md:text-lg text-black leading-relaxed">
+                Through Dunmore Park, I've been exploring creative projects at the intersection of technology, art, and community—from experimental music to pixel art and digital experiences.
+              </p>
+            </div>
+
+            {/* Interested Section */}
+            <div className="space-y-4">
+              <p className="font-roboto text-base md:text-lg text-black font-medium">
+                I'm interested in connecting with:
+              </p>
+              <ul className="font-roboto text-base md:text-lg text-black space-y-2 list-disc list-inside">
+                <li>Founders building early-stage products</li>
+                <li>Creative technologists and artists</li>
+                <li>People working on community-driven projects</li>
+              </ul>
+            </div>
+
+            {/* Footer Links */}
+            <div className="pt-4">
+              <p className="font-roboto text-base md:text-lg text-black">
+                <a href="mailto:andrew@example.com" className="underline hover:no-underline">Email</a> / 
+                <a href="https://x.com/dunmore_park" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline"> X</a> / 
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline"> LinkedIn</a>
+              </p>
+            </div>
+          </div>
+
+          {/* Links Label - Top Right */}
+          <div className="absolute top-8 right-8">
+            <p className="font-roboto text-sm md:text-base text-black">Links</p>
           </div>
         </div>
-      </section>
 
-      {/* About Section with orange gradient background */}
-      <section 
-        className="py-16 px-4 bg-cover bg-center"
-        style={{ backgroundImage: `url(${heroTextBg})` }}
-      >
-        <div className="max-w-[800px] mx-auto">
-          <h2 className="font-retro text-4xl md:text-6xl text-white mb-12 text-center drop-shadow-lg">
-            About Me
-          </h2>
-          
-          <AboutParagraphs />
-        </div>
+        {/* Right Side - Portrait Image */}
+        <div 
+          className="min-h-[50vh] lg:min-h-screen bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${heroImageSplit})` }}
+        />
       </section>
-
-      <hr className="border-white/30 max-w-[800px] mx-auto" style={{ backgroundColor: 'transparent' }} />
-      
-      {/* Side Quests Section */}
-      <section 
-        className="py-16 px-4 bg-cover bg-center"
-        style={{ backgroundImage: `url(${sideQuestsBg})` }}
-      >
-        <div className="max-w-[800px] mx-auto">
-          <h2 className="font-retro text-4xl md:text-6xl text-white mb-12 text-center drop-shadow-lg">
-            Side Quests
-          </h2>
-          
-          <SideQuests />
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer 
-        className="text-white py-8 px-4 bg-cover bg-center"
-        style={{ backgroundImage: `url(${sideQuestsBg})` }}
-      >
-        <div className="max-w-[800px] mx-auto text-center">
-          <p className="font-pixel text-lg md:text-xl leading-6 drop-shadow-lg">
-            Created by Andrew, 2025
-          </p>
-        </div>
-      </footer>
     </div>
   );
 };
