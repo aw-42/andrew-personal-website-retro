@@ -1,6 +1,7 @@
 import HamburgerNav from "@/components/HamburgerNav";
 import heroImageSplit from "@/assets/hero-image-split.jpg";
 import heroBgYellow from "@/assets/hero-bg-yellow.jpg";
+import sideQuestsBg from "@/assets/side-quests-bg.jpg";
 const Index = () => {
   return <div className="min-h-screen relative overflow-x-hidden">
       <HamburgerNav />
@@ -69,6 +70,65 @@ const Index = () => {
         <div className="min-h-[50vh] lg:min-h-screen bg-cover bg-center bg-no-repeat" style={{
         backgroundImage: `url(${heroImageSplit})`
       }} />
+      </section>
+
+      {/* Side Quests Section */}
+      <section className="min-h-screen bg-cover bg-center py-16 px-8 lg:py-24 lg:px-16" style={{
+        backgroundImage: `url(${sideQuestsBg})`
+      }}>
+        <div className="max-w-7xl mx-auto">
+          {/* Section Title */}
+          <h2 className="font-gatwick text-6xl md:text-7xl lg:text-8xl text-black mb-8">
+            Side Quests
+          </h2>
+
+          {/* Intro Text */}
+          <p className="font-roboto text-xl md:text-2xl text-black mb-12 max-w-4xl">
+            I love a side quest. I've done many of them in addition to my primary career. Here's a few:
+          </p>
+
+          {/* Three Column Layout */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+            {/* Creative Column */}
+            <div className="space-y-4">
+              <h3 className="font-roboto font-bold text-2xl text-black mb-6">Creative</h3>
+              <ul className="font-roboto text-base md:text-lg text-black space-y-3">
+                <li>The Goo Photoshoot — Creative Director, Artist</li>
+                <li>The Finger Question App - Creator</li>
+                <li>Wired Magazine — Featured Artist</li>
+                <li>In-Store Music Curator — DECIEM: The Abnormal Beauty Company</li>
+                <li>Spectra: Interactive Art Exhibit — Sound Designer</li>
+              </ul>
+            </div>
+
+            {/* Product/Biz Column */}
+            <div className="space-y-4">
+              <h3 className="font-roboto font-bold text-2xl text-black mb-6">Product/Biz</h3>
+              <ul className="font-roboto text-base md:text-lg text-black space-y-3">
+                <li>SignBridge App — Creator</li>
+                <li>The Downtown Defrost Music & Arts Festival — Co-Founder</li>
+                <li>The Alberta Electronic Music Conference — Co-Founder</li>
+                <li>The Virtual Electronic Music Summit — Co-Founder</li>
+                <li>Night Vision Music — Co-Founder</li>
+                <li>Night Vision Music Academy — Co-Founder</li>
+                <li>Aurora Beer — Investor & Co-Founder</li>
+              </ul>
+            </div>
+
+            {/* Misc Column */}
+            <div className="space-y-4">
+              <h3 className="font-roboto font-bold text-2xl text-black mb-6">Misc</h3>
+              <ul className="font-roboto text-base md:text-lg text-black space-y-3">
+                <li>Speaker — "The Worst Job I've Ever Had", Fuckup Nights</li>
+                <li>Speaker — "The World's Most Interesting Fruit", Pecha Kucha / Nerd Night</li>
+                <li>Alberta Music — Digital Advisory Board Member</li>
+                <li>Magazines Canada — Marketing Advisory Group Member</li>
+                <li>Cannes Young Lions Advertising Competition - Top 3 Finalist</li>
+                <li>Edmonton City Council - Large-Scale Events Advisory Board</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
     </div>;
 };
