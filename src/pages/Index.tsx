@@ -20,6 +20,9 @@ const Index = () => {
               <h1 className="font-gatwick text-7xl md:text-8xl lg:text-9xl text-black leading-none mb-4">
                 I'm Andrew
               </h1>
+              <p className="font-roboto text-xl md:text-2xl text-black">
+                I'm a builder, founder, and artist.
+              </p>
             </div>
 
             {/* Paragraph 1 */}
