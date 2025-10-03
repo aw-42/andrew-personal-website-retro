@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { Menu, X, ExternalLink } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { ExternalLink } from "lucide-react";
 
 const HamburgerNav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,21 +13,14 @@ const HamburgerNav = () => {
 
   return (
     <>
-      {/* Hamburger Button */}
-      <Button
-        variant="ghost"
-        size="icon"
+      {/* Links Button */}
+      <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed top-4 right-4 z-50 bg-pixel-green text-background hover:bg-pixel-orange transition-colors duration-100 border-2 border-background font-pixel-bold"
-        style={{ width: '48px', height: '48px' }}
+        className="fixed top-4 right-4 z-50 font-roboto text-lg text-black hover:underline transition-all duration-200"
         aria-label="Toggle navigation menu"
       >
-        {isOpen ? (
-          <X className="h-5 w-5" />
-        ) : (
-          <Menu className="h-5 w-5" />
-        )}
-      </Button>
+        {isOpen ? "Close" : "Links"}
+      </button>
 
       {/* Overlay */}
       {isOpen && (
@@ -40,24 +32,16 @@ const HamburgerNav = () => {
 
       {/* Navigation Menu */}
       <nav
-        className={`fixed top-0 right-0 h-full w-80 border-l-4 border-pixel-green z-40 transform transition-transform duration-150 ${
+        className={`fixed top-0 right-0 h-full w-80 bg-background border-l border-border z-40 transform transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
-        style={{ backgroundColor: '#20516C' }}
       >
-        <div className="flex flex-col items-center justify-center h-full space-y-4 p-8">
-          <div className="text-center mb-8">
-            <h2 className="font-pixel-bold text-3xl text-white mb-4">
-              MENU
-            </h2>
-            <div className="w-24 h-1 bg-pixel-orange mx-auto"></div>
-          </div>
-
+        <div className="flex flex-col items-start justify-center h-full space-y-6 p-12">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="font-pixel text-xl text-white hover:text-pixel-orange hover:bg-white/10 transition-colors duration-100 w-full text-center py-4 px-6 border-2 border-transparent hover:border-pixel-orange"
+              className="font-roboto text-2xl text-foreground hover:underline transition-all duration-200"
               onClick={() => setIsOpen(false)}
             >
               {link.name}
