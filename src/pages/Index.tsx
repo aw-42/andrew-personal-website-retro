@@ -1,26 +1,23 @@
 import HamburgerNav from "@/components/HamburgerNav";
 import heroImageSplit from "@/assets/hero-image-split.jpg";
 import heroBgYellow from "@/assets/hero-bg-yellow.jpg";
-
 const Index = () => {
-  return (
-    <div className="min-h-screen relative overflow-x-hidden">
+  return <div className="min-h-screen relative overflow-x-hidden">
       <HamburgerNav />
       
       {/* Split-Screen Hero Section */}
       <section className="min-h-screen grid lg:grid-cols-2 grid-cols-1">
         {/* Left Side - Text Content with Yellow Background */}
-        <div 
-          className="relative flex items-center justify-center px-8 py-16 lg:py-24 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroBgYellow})` }}
-        >
+        <div className="relative flex items-center justify-center px-8 py-16 lg:py-24 bg-cover bg-center" style={{
+        backgroundImage: `url(${heroBgYellow})`
+      }}>
           <div className="max-w-xl w-full space-y-8">
             {/* Main Heading */}
             <div>
               <h1 className="font-gatwick text-7xl md:text-8xl lg:text-9xl text-black leading-none mb-4">
                 I'm Andrew
               </h1>
-              <p className="font-gatwick text-xl md:text-2xl text-black">
+              <p className="font-roboto text-xl md:text-2xl text-black">
                 I'm a builder, founder, and artist.
               </p>
             </div>
@@ -61,18 +58,15 @@ const Index = () => {
 
           {/* Links Label - Top Right */}
           <div className="absolute top-8 right-8">
-            <p className="font-roboto text-sm md:text-base text-black">Links</p>
+            
           </div>
         </div>
 
         {/* Right Side - Portrait Image */}
-        <div 
-          className="min-h-[50vh] lg:min-h-screen bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${heroImageSplit})` }}
-        />
+        <div className="min-h-[50vh] lg:min-h-screen bg-cover bg-center bg-no-repeat" style={{
+        backgroundImage: `url(${heroImageSplit})`
+      }} />
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
