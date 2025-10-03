@@ -25,7 +25,7 @@ const Index = () => {
             {/* Paragraph 1 */}
             <div className="space-y-4">
               <p className="font-roboto text-base md:text-lg text-black leading-relaxed">
-                Currently splitting time between scaling the Toronto Product Management Association as CEO and building a start-up that actively fights the addictive nature of the internet.
+                Currently splitting time between scaling the <a href="http://tpma.ca/" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">Toronto Product Management Association</a> as CEO and building a start-up that actively fights the addictive nature of the internet.
               </p>
 
               {/* Paragraph 2 */}
