@@ -7,7 +7,7 @@ const Index = () => {
       <HamburgerNav />
       
       {/* Split-Screen Hero Section */}
-      <section className="min-h-screen grid lg:grid-cols-2 grid-cols-1">
+      <section className="grid lg:grid-cols-2 grid-cols-1">
         {/* Left Side - Text Content with Yellow Background */}
         <div className="relative flex items-center justify-center px-8 py-16 lg:py-24 bg-cover bg-center" style={{
         backgroundImage: `url(${heroBgYellow})`
@@ -67,7 +67,7 @@ const Index = () => {
         </div>
 
         {/* Right Side - Portrait Image */}
-        <div className="min-h-[50vh] lg:min-h-screen bg-cover bg-center bg-no-repeat" style={{
+        <div className="aspect-square lg:aspect-[3/4] bg-cover bg-center bg-no-repeat" style={{
         backgroundImage: `url(${heroImageSplit})`
       }} />
       </section>
