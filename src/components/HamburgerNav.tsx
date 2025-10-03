@@ -7,7 +7,7 @@ const HamburgerNav = () => {
   const navLinks = [
     { name: "LinkedIn", href: "https://www.linkedin.com/in/andrewwilliamscanada/", icon: ExternalLink },
     { name: "X", href: "https://x.com/andrew_reset", icon: ExternalLink },
-    { name: "Blog", href: "https://andrewdunmore.substack.com", icon: ExternalLink },
+    { name: "Blog", href: "https://resetskillpoints.substack.com/", icon: ExternalLink },
     { name: "Email", href: "mailto:website+andrewtwilliams2@gmail.com", icon: ExternalLink },
   ];
 
