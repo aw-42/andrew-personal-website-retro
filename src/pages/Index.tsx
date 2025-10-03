@@ -130,6 +130,13 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="py-8 text-center" style={{ backgroundColor: '#FF1500' }}>
+        <p className="font-roboto text-white text-base md:text-lg">
+          Site made by Andrew
+        </p>
+      </footer>
     </div>;
 };
 export default Index;
